@@ -9,5 +9,10 @@
 #ifndef Species_h
 #define Species_h
 
+enum Species {
+    Human,
+    Cat,
+    Hybrid
+};
 
 #endif /* Species_h */
