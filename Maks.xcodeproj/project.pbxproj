@@ -42,6 +42,7 @@
 		D5C14CD91F0B968D003BD86B /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		D5C14CDA1F0B968D003BD86B /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
 		D5C14CDB1F0B968D003BD86B /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		D5C14CE01F0B9C4C003BD86B /* Species.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Species.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 				D5C14CC61F0B92F9003BD86B /* LaunchScreen.storyboard */,
 				D5C14CC91F0B92F9003BD86B /* Info.plist */,
 				D5C14CB81F0B92F9003BD86B /* Supporting Files */,
+				D5C14CE01F0B9C4C003BD86B /* Species.h */,
 			);
 			path = Maks;
 			sourceTree = "<group>";
