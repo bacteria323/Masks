@@ -17,6 +17,10 @@
 		D5C14CD31F0B9544003BD86B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD21F0B9544003BD86B /* Accelerate.framework */; };
 		D5C14CD51F0B954A003BD86B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */; };
 		D5C14CD71F0B9551003BD86B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD61F0B9551003BD86B /* UIKit.framework */; };
+		D5C14CDC1F0B968D003BD86B /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CD81F0B968D003BD86B /* haarcascade_frontalcatface_extended.xml */; };
+		D5C14CDD1F0B968D003BD86B /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CD91F0B968D003BD86B /* haarcascade_frontalface_alt.xml */; };
+		D5C14CDE1F0B968D003BD86B /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CDA1F0B968D003BD86B /* haarcascade_lefteye_2splits.xml */; };
+		D5C14CDF1F0B968D003BD86B /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CDB1F0B968D003BD86B /* haarcascade_righteye_2splits.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		D5C14CD21F0B9544003BD86B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D5C14CD61F0B9551003BD86B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5C14CD81F0B968D003BD86B /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
+		D5C14CD91F0B968D003BD86B /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		D5C14CDA1F0B968D003BD86B /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		D5C14CDB1F0B968D003BD86B /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,10 @@
 		D5C14CB81F0B92F9003BD86B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D5C14CD81F0B968D003BD86B /* haarcascade_frontalcatface_extended.xml */,
+				D5C14CD91F0B968D003BD86B /* haarcascade_frontalface_alt.xml */,
+				D5C14CDA1F0B968D003BD86B /* haarcascade_lefteye_2splits.xml */,
+				D5C14CDB1F0B968D003BD86B /* haarcascade_righteye_2splits.xml */,
 				D5C14CB91F0B92F9003BD86B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -162,8 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C14CDD1F0B968D003BD86B /* haarcascade_frontalface_alt.xml in Resources */,
+				D5C14CDF1F0B968D003BD86B /* haarcascade_righteye_2splits.xml in Resources */,
 				D5C14CC81F0B92F9003BD86B /* LaunchScreen.storyboard in Resources */,
 				D5C14CC51F0B92F9003BD86B /* Assets.xcassets in Resources */,
+				D5C14CDE1F0B968D003BD86B /* haarcascade_lefteye_2splits.xml in Resources */,
+				D5C14CDC1F0B968D003BD86B /* haarcascade_frontalcatface_extended.xml in Resources */,
 				D5C14CC31F0B92F9003BD86B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
