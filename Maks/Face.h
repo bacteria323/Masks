@@ -12,6 +12,11 @@
 #include <opencv2/core.hpp>
 #include "Species.h"
 
+/*
+ Face is designed as an immutable type, ie properties cannot change after declaration.
+ */
+ 
+
 class Face
 {
     public:
