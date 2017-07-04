@@ -13,6 +13,10 @@
 		D5C14CC31F0B92F9003BD86B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CC11F0B92F9003BD86B /* Main.storyboard */; };
 		D5C14CC51F0B92F9003BD86B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CC41F0B92F9003BD86B /* Assets.xcassets */; };
 		D5C14CC81F0B92F9003BD86B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CC61F0B92F9003BD86B /* LaunchScreen.storyboard */; };
+		D5C14CD01F0B94C4003BD86B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CCF1F0B94C4003BD86B /* opencv2.framework */; };
+		D5C14CD31F0B9544003BD86B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD21F0B9544003BD86B /* Accelerate.framework */; };
+		D5C14CD51F0B954A003BD86B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */; };
+		D5C14CD71F0B9551003BD86B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD61F0B9551003BD86B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D5C14CC41F0B92F9003BD86B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C14CC71F0B92F9003BD86B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C14CC91F0B92F9003BD86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C14CCF1F0B94C4003BD86B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		D5C14CD21F0B9544003BD86B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5C14CD61F0B9551003BD86B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C14CD71F0B9551003BD86B /* UIKit.framework in Frameworks */,
+				D5C14CD51F0B954A003BD86B /* CoreGraphics.framework in Frameworks */,
+				D5C14CD31F0B9544003BD86B /* Accelerate.framework in Frameworks */,
+				D5C14CD01F0B94C4003BD86B /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				D5C14CB71F0B92F9003BD86B /* Maks */,
 				D5C14CB61F0B92F9003BD86B /* Products */,
+				D5C14CD11F0B9544003BD86B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,7 @@
 		D5C14CB71F0B92F9003BD86B /* Maks */ = {
 			isa = PBXGroup;
 			children = (
+				D5C14CCF1F0B94C4003BD86B /* opencv2.framework */,
 				D5C14CBB1F0B92F9003BD86B /* AppDelegate.h */,
 				D5C14CBC1F0B92F9003BD86B /* AppDelegate.m */,
 				D5C14CBE1F0B92F9003BD86B /* ViewController.h */,
@@ -77,6 +91,16 @@
 				D5C14CB91F0B92F9003BD86B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5C14CD11F0B9544003BD86B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5C14CD61F0B9551003BD86B /* UIKit.framework */,
+				D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */,
+				D5C14CD21F0B9544003BD86B /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +298,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WS5A48MB7C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Maks",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = Maks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mustardLabs.Maks;
@@ -286,6 +315,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WS5A48MB7C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Maks",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = Maks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mustardLabs.Maks;
