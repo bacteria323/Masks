@@ -33,7 +33,9 @@ class FaceDetector
         cv::CascadeClassifier catFaceClassifier;
         cv::CascadeClassifier humanLeftEyeClassifier;
         cv::CascadeClassifier humanRightEyeClassifier;
-        
+    
+        // if we add "WITH_CLAHE" in Preprocessor Macros, this class will make use of
+        // advanced equalization algorithm called contrast limited adaptive histogram equalization (CLAHE), otherwise it will just use a simplified equalization algorithm
         #ifdef WITH_CLAHE
             cv::Ptr<cv::CLAHE> clahe;
         #endif
