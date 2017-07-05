@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D5019C771F0CA42600BA5A34 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C761F0CA42600BA5A34 /* opencv2.framework */; };
+		D5019C7A1F0CA57500BA5A34 /* VideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D5019C791F0CA57500BA5A34 /* VideoCamera.m */; };
+		D5019C7C1F0CA5E000BA5A34 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C7B1F0CA5E000BA5A34 /* AssetsLibrary.framework */; };
+		D5019C7E1F0CA5E800BA5A34 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C7D1F0CA5E800BA5A34 /* AVFoundation.framework */; };
+		D5019C801F0CA5F200BA5A34 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C7F1F0CA5F200BA5A34 /* CoreMedia.framework */; };
+		D5019C821F0CA5F800BA5A34 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C811F0CA5F800BA5A34 /* CoreVideo.framework */; };
+		D5019C841F0CA60000BA5A34 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C831F0CA60000BA5A34 /* Photos.framework */; };
+		D5019C861F0CA60500BA5A34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C851F0CA60500BA5A34 /* QuartzCore.framework */; };
+		D5019C881F0CA60B00BA5A34 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C871F0CA60B00BA5A34 /* Social.framework */; };
 		D5C14CBA1F0B92F9003BD86B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CB91F0B92F9003BD86B /* main.m */; };
 		D5C14CBD1F0B92F9003BD86B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CBC1F0B92F9003BD86B /* AppDelegate.m */; };
 		D5C14CC01F0B92F9003BD86B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CBF1F0B92F9003BD86B /* ViewController.m */; };
@@ -27,6 +35,14 @@
 		D5019C6F1F0C93A500BA5A34 /* FaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
 		D5019C761F0CA42600BA5A34 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		D5019C781F0CA4C200BA5A34 /* VideoCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCamera.h; sourceTree = "<group>"; };
+		D5019C791F0CA57500BA5A34 /* VideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCamera.m; sourceTree = "<group>"; };
+		D5019C7B1F0CA5E000BA5A34 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D5019C7D1F0CA5E800BA5A34 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D5019C7F1F0CA5F200BA5A34 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D5019C811F0CA5F800BA5A34 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D5019C831F0CA60000BA5A34 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		D5019C851F0CA60500BA5A34 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D5019C871F0CA60B00BA5A34 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D5C14CB51F0B92F9003BD86B /* Maks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C14CB91F0B92F9003BD86B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5C14CBB1F0B92F9003BD86B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +69,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5019C881F0CA60B00BA5A34 /* Social.framework in Frameworks */,
+				D5019C861F0CA60500BA5A34 /* QuartzCore.framework in Frameworks */,
+				D5019C841F0CA60000BA5A34 /* Photos.framework in Frameworks */,
+				D5019C821F0CA5F800BA5A34 /* CoreVideo.framework in Frameworks */,
+				D5019C801F0CA5F200BA5A34 /* CoreMedia.framework in Frameworks */,
+				D5019C7E1F0CA5E800BA5A34 /* AVFoundation.framework in Frameworks */,
+				D5019C7C1F0CA5E000BA5A34 /* AssetsLibrary.framework in Frameworks */,
 				D5C14CD71F0B9551003BD86B /* UIKit.framework in Frameworks */,
 				D5C14CD51F0B954A003BD86B /* CoreGraphics.framework in Frameworks */,
 				D5019C771F0CA42600BA5A34 /* opencv2.framework in Frameworks */,
@@ -97,6 +120,7 @@
 				D5C14CE11F0B9CBB003BD86B /* Face.h */,
 				D5019C6F1F0C93A500BA5A34 /* FaceDetector.h */,
 				D5019C781F0CA4C200BA5A34 /* VideoCamera.h */,
+				D5019C791F0CA57500BA5A34 /* VideoCamera.m */,
 			);
 			path = Maks;
 			sourceTree = "<group>";
@@ -116,6 +140,13 @@
 		D5C14CD11F0B9544003BD86B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5019C871F0CA60B00BA5A34 /* Social.framework */,
+				D5019C851F0CA60500BA5A34 /* QuartzCore.framework */,
+				D5019C831F0CA60000BA5A34 /* Photos.framework */,
+				D5019C811F0CA5F800BA5A34 /* CoreVideo.framework */,
+				D5019C7F1F0CA5F200BA5A34 /* CoreMedia.framework */,
+				D5019C7D1F0CA5E800BA5A34 /* AVFoundation.framework */,
+				D5019C7B1F0CA5E000BA5A34 /* AssetsLibrary.framework */,
 				D5C14CD61F0B9551003BD86B /* UIKit.framework */,
 				D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */,
 				D5C14CD21F0B9544003BD86B /* Accelerate.framework */,
@@ -199,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5019C7A1F0CA57500BA5A34 /* VideoCamera.m in Sources */,
 				D5C14CC01F0B92F9003BD86B /* ViewController.m in Sources */,
 				D5C14CBD1F0B92F9003BD86B /* AppDelegate.m in Sources */,
 				D5C14CBA1F0B92F9003BD86B /* main.m in Sources */,
