@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		D5019C6F1F0C93A500BA5A34 /* FaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
 		D5019C761F0CA42600BA5A34 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		D5019C781F0CA4C200BA5A34 /* VideoCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCamera.h; sourceTree = "<group>"; };
 		D5C14CB51F0B92F9003BD86B /* Maks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C14CB91F0B92F9003BD86B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5C14CBB1F0B92F9003BD86B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 				D5C14CE01F0B9C4C003BD86B /* Species.h */,
 				D5C14CE11F0B9CBB003BD86B /* Face.h */,
 				D5019C6F1F0C93A500BA5A34 /* FaceDetector.h */,
+				D5019C781F0CA4C200BA5A34 /* VideoCamera.h */,
 			);
 			path = Maks;
 			sourceTree = "<group>";
