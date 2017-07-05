@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5019C721F0C956400BA5A34 /* VideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D5019C701F0C956400BA5A34 /* VideoCamera.m */; };
+		D5019C771F0CA42600BA5A34 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C761F0CA42600BA5A34 /* opencv2.framework */; };
 		D5C14CBA1F0B92F9003BD86B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CB91F0B92F9003BD86B /* main.m */; };
 		D5C14CBD1F0B92F9003BD86B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CBC1F0B92F9003BD86B /* AppDelegate.m */; };
 		D5C14CC01F0B92F9003BD86B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CBF1F0B92F9003BD86B /* ViewController.m */; };
 		D5C14CC31F0B92F9003BD86B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CC11F0B92F9003BD86B /* Main.storyboard */; };
 		D5C14CC51F0B92F9003BD86B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CC41F0B92F9003BD86B /* Assets.xcassets */; };
 		D5C14CC81F0B92F9003BD86B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C14CC61F0B92F9003BD86B /* LaunchScreen.storyboard */; };
-		D5C14CD01F0B94C4003BD86B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CCF1F0B94C4003BD86B /* opencv2.framework */; };
 		D5C14CD31F0B9544003BD86B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD21F0B9544003BD86B /* Accelerate.framework */; };
 		D5C14CD51F0B954A003BD86B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */; };
 		D5C14CD71F0B9551003BD86B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C14CD61F0B9551003BD86B /* UIKit.framework */; };
@@ -26,8 +25,7 @@
 
 /* Begin PBXFileReference section */
 		D5019C6F1F0C93A500BA5A34 /* FaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
-		D5019C701F0C956400BA5A34 /* VideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCamera.m; sourceTree = "<group>"; };
-		D5019C711F0C956400BA5A34 /* VideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCamera.h; sourceTree = "<group>"; };
+		D5019C761F0CA42600BA5A34 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		D5C14CB51F0B92F9003BD86B /* Maks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C14CB91F0B92F9003BD86B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5C14CBB1F0B92F9003BD86B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,7 +36,6 @@
 		D5C14CC41F0B92F9003BD86B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C14CC71F0B92F9003BD86B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C14CC91F0B92F9003BD86B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5C14CCF1F0B94C4003BD86B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		D5C14CD21F0B9544003BD86B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		D5C14CD41F0B954A003BD86B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D5C14CD61F0B9551003BD86B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -57,8 +54,8 @@
 			files = (
 				D5C14CD71F0B9551003BD86B /* UIKit.framework in Frameworks */,
 				D5C14CD51F0B954A003BD86B /* CoreGraphics.framework in Frameworks */,
+				D5019C771F0CA42600BA5A34 /* opencv2.framework in Frameworks */,
 				D5C14CD31F0B9544003BD86B /* Accelerate.framework in Frameworks */,
-				D5C14CD01F0B94C4003BD86B /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +82,7 @@
 		D5C14CB71F0B92F9003BD86B /* Maks */ = {
 			isa = PBXGroup;
 			children = (
-				D5019C701F0C956400BA5A34 /* VideoCamera.m */,
-				D5019C711F0C956400BA5A34 /* VideoCamera.h */,
-				D5C14CCF1F0B94C4003BD86B /* opencv2.framework */,
+				D5019C761F0CA42600BA5A34 /* opencv2.framework */,
 				D5C14CBB1F0B92F9003BD86B /* AppDelegate.h */,
 				D5C14CBC1F0B92F9003BD86B /* AppDelegate.m */,
 				D5C14CBE1F0B92F9003BD86B /* ViewController.h */,
@@ -202,7 +197,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5019C721F0C956400BA5A34 /* VideoCamera.m in Sources */,
 				D5C14CC01F0B92F9003BD86B /* ViewController.m in Sources */,
 				D5C14CBD1F0B92F9003BD86B /* AppDelegate.m in Sources */,
 				D5C14CBA1F0B92F9003BD86B /* main.m in Sources */,
