@@ -1,8 +1,8 @@
 //
-//  CaptureViewController.m
+//  ViewController.m
 //  Maks
 //
-//  Created by Shun Lee on 5/7/2017.
+//  Created by Shun Lee on 4/7/2017.
 //  Copyright © 2017 mustardLabs. All rights reserved.
 //
 
@@ -16,22 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
