@@ -9,16 +9,18 @@
 #import <opencv2/core.hpp>
 #import <opencv2/imgcodecs/ios.h>
 #import <opencv2/imgproc.hpp>
-
-#import "CaptureViewController.h"
 #import "FaceDetector.h"
+#import "CaptureViewController.h"
+
 //#import "ReviewViewController.h"
 #import "VideoCamera.h"
 
 const double DETECT_RESIZE_FACTOR = 0.5;
 
 @interface CaptureViewController () <CvVideoCameraDelegate> {
-//    FaceDetector *faceDetector;
+    
+    FaceDetector *faceDetector;
+    
 //    std::vector<Face> detectedFaces;
 //    Face bestDetectedFace;
 //    Face faceToMerge0;
@@ -53,7 +55,28 @@ const double DETECT_RESIZE_FACTOR = 0.5;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    if (faceDetector == NULL) {
+        
+        NSBundle *bundle = [NSBundle mainBundle];
+        
+        std::string humanFaceCascadePath = [[bundle
+                                             pathForResource:@"haarcascade_frontalface_alt"
+                                             ofType:@"xml"] UTF8String];
+        std::string catFaceCascadePath = [[bundle
+                                           pathForResource:@"haarcascade_frontalcatface_extended"
+                                           ofType:@"xml"] UTF8String];
+        std::string leftEyeCascadePath = [[bundle
+                                           pathForResource:@"haarcascade_lefteye_2splits"
+                                           ofType:@"xml"] UTF8String];
+        std::string rightEyeCascadePath = [[bundle
+                                            pathForResource:@"haarcascade_righteye_2splits"
+                                            ofType:@"xml"] UTF8String];
+        
+        faceDetector = new FaceDetector(humanFaceCascadePath,
+                                        catFaceCascadePath, leftEyeCascadePath,
+                                        rightEyeCascadePath);
+    }
 }
 
 
@@ -68,10 +91,10 @@ const double DETECT_RESIZE_FACTOR = 0.5;
 - (void)processImage:(cv::Mat &)mat{
     
 }
-
-- (void)showFace:(Face &)face inImageView:(UIImageView *)imageView{
-    
-}
+//
+//- (void)showFace:(Face &)face inImageView:(UIImageView *)imageView{
+//    
+//}
 
 - (UIImage *)imageFromCapturedMat:(const cv::Mat &)mat{
     
