@@ -19,6 +19,10 @@ class FaceDetector {
                      const std::string &catFaceCascadePath,
                      const std::string &humanLeftEyeCascadePath,
                      const std::string &humanRightEyeCascadePath){}
+    
+    
+        void detect(cv::Mat &image, std::vector<Face> &faces,
+                    double resizeFactor = 1.0, bool draw = false);
 };
 
 #endif /* FaceDetector_h */
