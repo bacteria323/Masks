@@ -25,16 +25,16 @@ class Face
              const cv::Point2f &rightEyeCenter,
              const cv::Point2f &noseTip){}
         
-//        /**
-//         * Construct an empty face.
-//         */
+        /**
+         * Construct an empty face.
+         */
         Face(){}
+
+        /**
+         * Construct a face by copying another face.
+         */
+        Face(const Face &other){}
 //
-//        /**
-//         * Construct a face by copying another face.
-//         */
-//        Face(const Face &other);
-//        
 //        /**
 //         * Construct a face by merging two other faces.
 //         */
