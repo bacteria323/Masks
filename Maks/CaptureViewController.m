@@ -17,25 +17,26 @@
 
 const double DETECT_RESIZE_FACTOR = 0.5;
 
-@interface CaptureViewController () <CvVideoCameraDelegate> {
+@interface CaptureViewController () <CvVideoCameraDelegate> { // declaring instance variables only
     
     FaceDetector *faceDetector;
     
-//    std::vector<Face> detectedFaces;
-//    Face bestDetectedFace;
-//    Face faceToMerge0;
-//    Face faceToMerge1;
+    std::vector<Face> detectedFaces;
+    Face bestDetectedFace;
+    Face faceToMerge0;
+    Face faceToMerge1;
 }
 
-//@property IBOutlet UIView *backgroundView;
-//
-//@property IBOutlet UIBarButtonItem *face0Button;
-//@property IBOutlet UIBarButtonItem *face1Button;
-//@property IBOutlet UIBarButtonItem *mergeButton;
-//
-//@property IBOutlet UIImageView *face0ImageView;
-//@property IBOutlet UIImageView *face1ImageView;
-//
+// unlike @interface, @property automatically generates getters and setters
+@property IBOutlet UIView *backgroundView;
+
+@property IBOutlet UIBarButtonItem *face0Button;
+@property IBOutlet UIBarButtonItem *face1Button;
+@property IBOutlet UIBarButtonItem *mergeButton;
+
+@property IBOutlet UIImageView *face0ImageView;
+@property IBOutlet UIImageView *face1ImageView;
+
 //@property VideoCamera *videoCamera;
 
 //- (IBAction)onTapToSetPointOfInterest:(UITapGestureRecognizer *)tapGesture;
@@ -77,6 +78,19 @@ const double DETECT_RESIZE_FACTOR = 0.5;
                                         catFaceCascadePath, leftEyeCascadePath,
                                         rightEyeCascadePath);
     }
+    
+//    self.face0Button.enabled = NO;
+//    self.face1Button.enabled = NO;
+//    self.mergeButton.enabled = (!faceToMerge0.isEmpty() &&
+//                                !faceToMerge1.isEmpty());
+//    
+//    self.videoCamera = [[VideoCamera alloc]
+//                        initWithParentView:self.backgroundView];
+//    self.videoCamera.delegate = self;
+//    self.videoCamera.defaultAVCaptureSessionPreset =
+//    AVCaptureSessionPresetHigh;
+//    self.videoCamera.defaultFPS = 30;
+//    self.videoCamera.letterboxPreview = YES;
 }
 
 
