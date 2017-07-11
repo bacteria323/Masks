@@ -17,6 +17,7 @@
 		D5019C861F0CA60500BA5A34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C851F0CA60500BA5A34 /* QuartzCore.framework */; };
 		D5019C881F0CA60B00BA5A34 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5019C871F0CA60B00BA5A34 /* Social.framework */; };
 		D5019C8F1F0E0FE500BA5A34 /* FaceDetector.c in Sources */ = {isa = PBXBuildFile; fileRef = D5019C8D1F0E0FE500BA5A34 /* FaceDetector.c */; };
+		D5ADE7FF1F14A5EE0007489B /* Face.c in Sources */ = {isa = PBXBuildFile; fileRef = D5ADE7FE1F14A5EE0007489B /* Face.c */; };
 		D5C14CBA1F0B92F9003BD86B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CB91F0B92F9003BD86B /* main.m */; };
 		D5C14CBD1F0B92F9003BD86B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CBC1F0B92F9003BD86B /* AppDelegate.m */; };
 		D5C14CC01F0B92F9003BD86B /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C14CBF1F0B92F9003BD86B /* CaptureViewController.m */; };
@@ -45,6 +46,7 @@
 		D5019C871F0CA60B00BA5A34 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D5019C8D1F0E0FE500BA5A34 /* FaceDetector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FaceDetector.c; sourceTree = "<group>"; };
 		D5019C8E1F0E0FE500BA5A34 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
+		D5ADE7FE1F14A5EE0007489B /* Face.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Face.c; sourceTree = "<group>"; };
 		D5C14CB51F0B92F9003BD86B /* Maks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C14CB91F0B92F9003BD86B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5C14CBB1F0B92F9003BD86B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				D5019C791F0CA57500BA5A34 /* VideoCamera.m */,
 				D5019C8D1F0E0FE500BA5A34 /* FaceDetector.c */,
 				D5019C8E1F0E0FE500BA5A34 /* FaceDetector.h */,
+				D5ADE7FE1F14A5EE0007489B /* Face.c */,
 			);
 			path = Maks;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				D5019C7A1F0CA57500BA5A34 /* VideoCamera.m in Sources */,
 				D5C14CC01F0B92F9003BD86B /* CaptureViewController.m in Sources */,
+				D5ADE7FF1F14A5EE0007489B /* Face.c in Sources */,
 				D5C14CBD1F0B92F9003BD86B /* AppDelegate.m in Sources */,
 				D5C14CBA1F0B92F9003BD86B /* main.m in Sources */,
 				D5019C8F1F0E0FE500BA5A34 /* FaceDetector.c in Sources */,

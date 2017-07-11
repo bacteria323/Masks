@@ -79,11 +79,11 @@ const double DETECT_RESIZE_FACTOR = 0.5;
                                         rightEyeCascadePath);
     }
     
-//    self.face0Button.enabled = NO;
-//    self.face1Button.enabled = NO;
-//    self.mergeButton.enabled = (!faceToMerge0.isEmpty() &&
-//                                !faceToMerge1.isEmpty());
-//    
+    self.face0Button.enabled = NO;
+    self.face1Button.enabled = NO;
+    self.mergeButton.enabled = (!faceToMerge0.isEmpty() &&
+                                !faceToMerge1.isEmpty());
+//
 //    self.videoCamera = [[VideoCamera alloc]
 //                        initWithParentView:self.backgroundView];
 //    self.videoCamera.delegate = self;
