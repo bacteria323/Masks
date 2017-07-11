@@ -37,7 +37,7 @@ const double DETECT_RESIZE_FACTOR = 0.5;
 @property IBOutlet UIImageView *face0ImageView;
 @property IBOutlet UIImageView *face1ImageView;
 
-//@property VideoCamera *videoCamera;
+@property VideoCamera *videoCamera;
 
 //- (IBAction)onTapToSetPointOfInterest:(UITapGestureRecognizer *)tapGesture;
 //- (IBAction)onColorModeSelected:(UISegmentedControl *)segmentedControl;
@@ -83,14 +83,12 @@ const double DETECT_RESIZE_FACTOR = 0.5;
     self.face1Button.enabled = NO;
     self.mergeButton.enabled = (!faceToMerge0.isEmpty() &&
                                 !faceToMerge1.isEmpty());
-//
-//    self.videoCamera = [[VideoCamera alloc]
-//                        initWithParentView:self.backgroundView];
-//    self.videoCamera.delegate = self;
-//    self.videoCamera.defaultAVCaptureSessionPreset =
-//    AVCaptureSessionPresetHigh;
-//    self.videoCamera.defaultFPS = 30;
-//    self.videoCamera.letterboxPreview = YES;
+
+    self.videoCamera = [[VideoCamera alloc] initWithParentView:self.backgroundView];
+    self.videoCamera.delegate = self;
+    self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPresetHigh;
+    self.videoCamera.defaultFPS = 30;
+    self.videoCamera.letterboxPreview = YES;
 }
 
 // IOS does not provide automatic memory management for dynamically allocated C++ objects so we must do it manually
