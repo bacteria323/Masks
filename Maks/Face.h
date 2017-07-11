@@ -34,14 +34,14 @@ class Face
          * Construct a face by copying another face.
          */
         Face(const Face &other){}
+
+        /**
+         * Construct a face by merging two other faces.
+         */
+        Face(const Face &face0, const Face &face1){}
+    
+    bool isEmpty() const;
 //
-//        /**
-//         * Construct a face by merging two other faces.
-//         */
-//        Face(const Face &face0, const Face &face1);
-//        
-//        bool isEmpty() const;
-//        
 //        Species getSpecies() const;
 //        
 //        const cv::Mat &getMat() const;
@@ -51,7 +51,7 @@ class Face
 //        const cv::Point2f &getLeftEyeCenter() const;
 //        const cv::Point2f &getRightEyeCenter() const;
 //        const cv::Point2f &getNoseTip() const;
-//    
+    
 //    private:
 //        void initMergedFace(const Face &biggerFace, const Face &smallerFace);
 //        
