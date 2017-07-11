@@ -93,10 +93,21 @@ const double DETECT_RESIZE_FACTOR = 0.5;
 //    self.videoCamera.letterboxPreview = YES;
 }
 
-
+// IOS does not provide automatic memory management for dynamically allocated C++ objects so we must do it manually
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    if (faceDetector != NULL) {
+        delete faceDetector;
+        faceDetector = NULL;
+    }
+}
+
+- (void)dealloc {
+    if (faceDetector != NULL) {
+        delete faceDetector;
+        faceDetector = NULL;
+    }
 }
 
 - (void)refresh {
